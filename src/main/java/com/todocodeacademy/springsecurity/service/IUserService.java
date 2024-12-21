@@ -13,4 +13,5 @@ public interface IUserService {
     public void deleteById(Long id);
     public void update(UserSec userSec);
     public String encriptPassword(String password);
+    public Optional<UserSec> findEntityByUsername(String username);
 }

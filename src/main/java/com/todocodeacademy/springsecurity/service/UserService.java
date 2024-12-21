@@ -44,4 +44,10 @@ public class UserService implements IUserService {
     public String encriptPassword(String password) {
         return new BCryptPasswordEncoder().encode(password);
     }
+
+    @Override
+    public Optional<UserSec> findEntityByUsername(String username) {
+        return userRepository.findUserEntityByUsername(username);
+    }
+
 }

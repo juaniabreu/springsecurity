@@ -38,4 +38,8 @@ public class Venta {
     private String domicilio;
     private String estado="Pendiente";
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private UserSec user;
+
 }

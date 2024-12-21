@@ -2,12 +2,18 @@ package com.todocodeacademy.springsecurity.controller;
 
 import com.todocodeacademy.springsecurity.model.Producto;
 import com.todocodeacademy.springsecurity.model.ProductoVendido;
+import com.todocodeacademy.springsecurity.model.UserSec;
 import com.todocodeacademy.springsecurity.model.Venta;
 import com.todocodeacademy.springsecurity.service.ProductoService;
+import com.todocodeacademy.springsecurity.service.UserService;
 import com.todocodeacademy.springsecurity.service.VentaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
@@ -22,6 +28,8 @@ public class VentaController {
     private ProductoService productoService;
     @Autowired
     private VentaService ventaService;
+    @Autowired
+    private UserService userService;
 
     @GetMapping("/getall")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
@@ -46,8 +54,6 @@ public class VentaController {
         Venta v  = new Venta();
         v.setCuit(venta.getCuit());
         v.setRazonSocial(venta.getRazonSocial());
-
-
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yy HH:mm");
         Date fecha = new Date();
         String formattedDate = formatter.format(fecha);
@@ -64,6 +70,7 @@ public class VentaController {
         v.setTotal(venta.getTotal());
 
         List<ProductoVendido> vendidos = new ArrayList<>();
+
         for(ProductoVendido p : venta.getProductos()){
 
             Long productoId = p.getProducto().getId();

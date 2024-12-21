@@ -17,7 +17,13 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    private int precio;
+    private double precio;
+    private String imageUrl;
     private String estado ="Activo";
 
+    public Producto(String nombre, double precio, String imageUrl) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.imageUrl = imageUrl;
+    }
 }
