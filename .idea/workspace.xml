@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2aa54d25-6169-4f26-9175-ccba0ff0c3c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/MontoMiminoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/MontoMinimo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IMontoMinimoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IMontoMinimoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/MontoMinimoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/SendEmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/SpringsecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/SpringsecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/VentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/controller/VentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/dto/AuthLoginRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/dto/AuthLoginRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/dto/AuthResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/dto/AuthResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/ProductoVendido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/ProductoVendido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/UserSec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/UserSec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Venta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/model/Venta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IPermissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IPermissionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IProductoVendidoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IProductoVendidoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IVentaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/repository/IVentaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/security/config/filter/CloudinaryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/security/config/filter/CloudinaryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/security/config/filter/JwtTokenValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/security/config/filter/JwtTokenValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IPermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IProductoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IProductoVendidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IProductoVendidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IVentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/IVentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/ProducoVendidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/ProducoVendidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/ProductoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/UserDetailsServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/UserDetailsServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/VentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/service/VentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/todocodeacademy/springsecurity/utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/todocodeacademy/springsecurity/SpringsecurityApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/todocodeacademy/springsecurity/SpringsecurityApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;juaniabreu&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/juaniabreu/springsecurity.git&quot;,
+    &quot;accountId&quot;: &quot;94f937b8-875a-4ee4-891e-7cdffcf4e7a7&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2g7bstiyJMjypbFibjGrFbNjrwr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringsecurityApplication.executor": "Run",
+    "Maven.springsecurity [clean].executor": "Run",
+    "Maven.springsecurity [install].executor": "Run",
+    "Maven.vichenzo [clean].executor": "Run",
+    "Maven.vichenzo [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.SpringsecurityApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/juani/Desktop/vichenzo/springsecurity",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.SpringsecurityApplication">
+    <configuration name="SpringsecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17 (2)" />
+      <envs>
+        <env name="BD_PASSWORD" value="root" />
+        <env name="BD_URL" value="jdbc:mysql://localhost:3306/security?useSSL=false&amp;serverTimezone=UTC" />
+        <env name="BD_USER" value="root" />
+        <env name="SS_PASSWORD" value="1234" />
+        <env name="SS_USER" value="juani" />
+        <env name="PRIVATE_KEY" value="ab53c9f17b2e14edf6647f69711cad022f615d6d1dd3eb8112d513f6387b10c5" />
+        <env name="USER_GENERATOR" value="JUANI-SEC" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.todocodeacademy.springsecurity.SpringsecurityApplication" />
+      <module name="springsecurity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.todocodeacademy.springsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringsecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="BD_PASSWORD" value="root" />
+        <env name="BD_URL" value="jdbc:mysql://localhost:3306/security" />
+        <env name="BD_USER" value="root" />
+        <env name="PRIVATE_KEY" value="ab53c9f17b2e14edf6647f69711cad022f615d6d1dd3eb8112d513f6387b10c5" />
+        <env name="SS_PASSWORD" value="juani" />
+        <env name="SS_USER" value="juani" />
+        <env name="USER_GENERATOR" value="JUANI-SEC" />
+      </envs>
+      <module name="vichenzo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.todocodeacademy.springsecurity.SpringsecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SpringsecurityApplication" />
+      <item itemvalue="Spring Boot.SpringsecurityApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringsecurityApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aa54d25-6169-4f26-9175-ccba0ff0c3c2" name="Changes" comment="" />
+      <created>1715051775618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715051775618</updated>
+      <workItem from="1732952686325" duration="2409000" />
+      <workItem from="1733085214254" duration="17353000" />
+      <workItem from="1733259379420" duration="5476000" />
+      <workItem from="1733360460849" duration="21000" />
+      <workItem from="1733370214113" duration="4254000" />
+      <workItem from="1733379631417" duration="10483000" />
+      <workItem from="1733464579082" duration="11847000" />
+      <workItem from="1733528916856" duration="2818000" />
+      <workItem from="1733702540604" duration="1051000" />
+      <workItem from="1733959602171" duration="33000" />
+      <workItem from="1734216667601" duration="2571000" />
+      <workItem from="1734290307705" duration="9039000" />
+      <workItem from="1734311034502" duration="3470000" />
+      <workItem from="1734376453109" duration="5959000" />
+      <workItem from="1734460822500" duration="5823000" />
+      <workItem from="1734550358078" duration="225000" />
+      <workItem from="1734554086315" duration="526000" />
+      <workItem from="1734672804254" duration="15077000" />
+      <workItem from="1734730518249" duration="3583000" />
+      <workItem from="1734816808885" duration="2436000" />
+      <workItem from="1734821149026" duration="41000" />
+      <workItem from="1734821221017" duration="2607000" />
+      <workItem from="1734837182008" duration="3905000" />
+      <workItem from="1734845460270" duration="121000" />
+      <workItem from="1734845840485" duration="3373000" />
+      <workItem from="1734888691251" duration="1612000" />
+      <workItem from="1734990242104" duration="4801000" />
+      <workItem from="1735078611407" duration="28000" />
+      <workItem from="1735079114918" duration="3190000" />
+      <workItem from="1735103572443" duration="4692000" />
+      <workItem from="1735245670451" duration="1159000" />
+      <workItem from="1735247603646" duration="1098000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
