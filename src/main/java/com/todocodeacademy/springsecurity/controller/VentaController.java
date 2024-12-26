@@ -1,10 +1,12 @@
 package com.todocodeacademy.springsecurity.controller;
 
+import com.resend.core.exception.ResendException;
 import com.todocodeacademy.springsecurity.model.Producto;
 import com.todocodeacademy.springsecurity.model.ProductoVendido;
 import com.todocodeacademy.springsecurity.model.UserSec;
 import com.todocodeacademy.springsecurity.model.Venta;
 import com.todocodeacademy.springsecurity.service.ProductoService;
+import com.todocodeacademy.springsecurity.service.SendEmailService;
 import com.todocodeacademy.springsecurity.service.UserService;
 import com.todocodeacademy.springsecurity.service.VentaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,9 @@ import java.util.*;
 @RequestMapping("/api/ventas")
 @CrossOrigin("*")
 public class VentaController {
+
+    @Autowired
+    private SendEmailService sendEmailService;
 
     @Autowired
     private ProductoService productoService;
@@ -49,7 +54,7 @@ public class VentaController {
 
     @PostMapping
     @PreAuthorize("hasRole('ROLE_USER')")
-    public ResponseEntity<Venta> create(@RequestBody Venta venta){
+    public ResponseEntity<Venta> create(@RequestBody Venta venta) throws ResendException {
 
         Venta v  = new Venta();
         v.setCuit(venta.getCuit());
@@ -68,9 +73,8 @@ public class VentaController {
         v.setFormaPago(venta.getFormaPago());
         v.setEstado(venta.getEstado());
         v.setTotal(venta.getTotal());
-
+        v.setEmail(venta.getEmail());
         List<ProductoVendido> vendidos = new ArrayList<>();
-
         for(ProductoVendido p : venta.getProductos()){
 
             Long productoId = p.getProducto().getId();
@@ -80,9 +84,11 @@ public class VentaController {
             pv.setCantidad(p.getCantidad());
             vendidos.add(pv);
         }
+
+
         v.setProductos(vendidos);
-
-
+        String body = venta.generarResumenVenta(vendidos);
+        sendEmailService.sendEmail(v.getEmail(),body);
         ventaService.save(v);
 
         return ResponseEntity.ok(v);

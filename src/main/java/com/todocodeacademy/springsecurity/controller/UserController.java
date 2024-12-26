@@ -1,7 +1,6 @@
 package com.todocodeacademy.springsecurity.controller;
 
-import com.todocodeacademy.springsecurity.dto.UserDto;
-import com.todocodeacademy.springsecurity.model.Permission;
+
 import com.todocodeacademy.springsecurity.model.Role;
 import com.todocodeacademy.springsecurity.model.UserSec;
 import com.todocodeacademy.springsecurity.service.IRoleService;
@@ -11,11 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -99,23 +94,12 @@ public class UserController {
     }
 
     @GetMapping("/who")
-    public ResponseEntity<Map<String, String>> who() {
-        SecurityContext context = SecurityContextHolder.getContext();
-        Authentication authentication = context.getAuthentication();
-
-        String username;
-
-        // Extraer el username correctamente
-        Object principal = authentication.getPrincipal();
-        if (principal instanceof UserDetails) {
-            username = ((UserDetails) principal).getUsername();  // Aquí obtenemos el username correctamente
-        } else {
-            username = authentication.getName();  // Fallback por si no es UserDetails
-        }
-
-        Map<String, String> response = new HashMap<>();
-        response.put("username", username);  // Devolver solo el username
-
-        return new ResponseEntity<>(response, HttpStatus.OK);
+    public ResponseEntity<String> who() {
+            Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+            System.out.println(auth.getPrincipal());
+            System.out.println(auth.getName());
+            UserSec user = (UserSec) auth.getPrincipal();
+            System.out.println(user.getUsername());
+            return new ResponseEntity<>("username", HttpStatus.OK);
     }
 }

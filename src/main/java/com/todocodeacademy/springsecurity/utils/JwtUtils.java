@@ -41,7 +41,7 @@ public class JwtUtils {
                 .withSubject(username)//al usuario que le voy a crear el token
                 .withClaim("authorities", authorities)
                 .withIssuedAt(new Date()) //cuando se creo
-                .withExpiresAt((new Date(System.currentTimeMillis() + 30*10000))) // cuanto tiempo va a ser valido el token
+                .withExpiresAt((new Date(System.currentTimeMillis() + 1000*60*60*10))) // cuanto tiempo va a ser valido el token
                 .withJWTId(UUID.randomUUID().toString()) // cada token debe tener un id,te crea una random
                 .withNotBefore(new Date(System.currentTimeMillis())) // apartir de cuandoe es valido este token
                 .sign(algorithm);

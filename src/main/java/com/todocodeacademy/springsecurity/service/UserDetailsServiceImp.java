@@ -1,8 +1,6 @@
 package com.todocodeacademy.springsecurity.service;
 import com.todocodeacademy.springsecurity.dto.AuthLoginRequestDTO;
 import com.todocodeacademy.springsecurity.dto.AuthResponseDto;
-import com.todocodeacademy.springsecurity.model.Permission;
-import com.todocodeacademy.springsecurity.model.Role;
 import com.todocodeacademy.springsecurity.model.UserSec;
 import com.todocodeacademy.springsecurity.repository.IUserRepository;
 import com.todocodeacademy.springsecurity.utils.JwtUtils;
@@ -63,7 +61,8 @@ public class UserDetailsServiceImp implements UserDetailsService {
                 userSec.isAccountNotExpired(),
                 userSec.isCredentialNotExpired(),
                 userSec.isAccountNotLocked(),
-                authorityList);
+                authorityList) {
+        };
     }
 
     public AuthResponseDto loginUser(@Valid AuthLoginRequestDTO authLoginRequest) {

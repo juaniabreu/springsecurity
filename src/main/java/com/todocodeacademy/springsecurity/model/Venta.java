@@ -36,10 +36,30 @@ public class Venta {
     private String formaPago;
     private String fecha;
     private String domicilio;
+    private String email;
     private String estado="Pendiente";
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
-    private UserSec user;
+
+    public String generarResumenVenta(List<ProductoVendido> productos) {
+        StringBuilder html = new StringBuilder();
+        html.append("<h1>Gracias por tu compra</h<1>");
+        html.append("<p>Este es el resumen de tu compra:</p>");
+        html.append("<table border='1' style='border-collapse: collapse;'>");
+        html.append("<tr><th>Producto</th><th>Precio</th><th>Cantidad</th></tr>");
+
+        double total = 0;
+        for (ProductoVendido producto : productos) {
+            html.append("<tr>")
+                    .append("<td>").append(producto.getProducto().getNombre()).append("</td>")
+                    .append("<td>$").append(producto.getProducto().getPrecio()).append("</td>")
+                    .append("<td>").append(producto.getCantidad()).append("</td>")
+                    .append("</tr>");
+            total += producto.getProducto().getPrecio()*producto.getCantidad();
+        }
+
+        html.append("</table>");
+        html.append("<p>Total: $").append(String.format("%.2f", total)).append("</p>");
+        return html.toString();
+    }
 
 }
